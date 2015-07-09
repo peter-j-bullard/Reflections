@@ -1,0 +1,106 @@
+How to create the files for this document:
+
+cd ~                          # change directories to your home directory
+mkdir version-control         # make version-control directory
+cd version-control            # go to version-control directory
+mkdir reflections             # create reflections directory
+cd reflections                # go to reflections directory
+subl lesson_1_reflections.txt # launch sublime with file called lesson_1_reflections.txt (you can replace subl with another editor here if you prefer a different one)
+
+pwd # print working directory - shows what directory you are in
+ls  # list the files in this directory
+
+--Cloning a Repository--
+To clone a repository, run git clone followed by a space and the repository URL.
+
+--Asteroids URL--
+Use the following url to clone the Asteroids repository: https://github.com/udacity/asteroids.git
+
+--Exiting git log--
+To stop viewing git log output, press q (which stands for quit).
+
+--Getting Colored Output--
+To get colored diff output, run git config --global color.ui auto
+
+Windows 
+To copy and paste within Git Bash, follow the instructions on this page.
+
+--Using git log and git diff--
+As a reminder, running git log will show a list of the recent commits with information about them, including commit IDs. Running git diff followed by two commit IDs will compare the two versions of the code in those commits. If you need a refresher, you may want to rewatch this video.
+
+--Entering commit IDs--
+If it is easier, you may enter the first four or more characters of the commit ID rather than pasting the entire ID.
+
+1. How did seeing the difference between two versions of code help?
+
+This was very useful in the fact of finding errors that were created when building the new portion of code. Searching for errors became much easier than manually going through each line of code and trying to detect the error that way. There seems to be an even easier way that will be explore later in the course.
+
+2. How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+Having this information can help programmers by allowing them to check against their old code for errors and promotes good file saving techniques.
+
+3. What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+Pros: You can decide what is the best location to provide the commit, You can save a commit after each new function you have created to allow for complete functionality between each commit
+Cons: You have to remember to save the commits, human error always plays a factor when something is manually done
+
+4. Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+While coding it is very important to track all files associated with the project you are working on. Producing a word document does not have much to do with other word documents and may be tracked separately.
+
+--Exiting git log--
+To stop viewing git log output, press q (which stands for quit).
+
+--Getting Colored Output--
+To get colored diff output, run git config --global color.ui auto
+
+--The default way to copy/paste in Git Bash is by using the menu (accessed by going to the top left) to "mark" to select what you want to copy and then use the menu again to paste.--
+This gets inefficient pretty quickly, so it's a good idea to set up QuickEdit mode to make copying and pasting much faster.  To do this, go to Menu->Properties and in the Options tab select QuickEdit Mode.
+
+--Using git log and git diff--
+As a reminder, running git log will show a list of the recent commits with information about them, including commit IDs. Running git diff followed by two commit IDs will compare the two versions of the code in those commits. If you need a refresher, you may want to rewatch this video.
+
+5. How can you use the commands git log and git diff to view the history of files?
+
+Using command prompt, type git log into the desired file. That will display all of the files that have been committed. Using the committed ID you can use git diff id1 id2 to look at the differences between the two.
+
+--Should not be doing an octopus--
+Octopus is a strategy Git uses to combine many different versions of code together. This message can appear if you try to use this strategy in an inappropriate situation.
+
+--You are in 'detached HEAD' state--
+HEAD is what Git calls the commit you are currently on. You can “detach” the HEAD by switching to a previous commit, which we’ll see in the next video. Despite what it sounds like, it’s actually not a bad thing to detach the HEAD. Git just warns you so that you’ll realize you’re doing it.
+
+--Panic! (the 'impossible' happened)--
+This is a real error message, but it’s not output by Git. Instead it’s output by GHC, the compiler for a programming language called Haskell. It’s reserved for particularly surprising errors!
+
+6. How might using version control make you more confident to make changes that could break something?
+
+There are multiple versions that I can come back to if something goes wrong and I can change back easily using git checkout id#.
+
+--Changing background color--
+If you prefer the background color of Git Bash to be something other than black, you can change it in the "Defaults" menu under the "Colors" tab. If you like the background color as-is, you don't need to make any changes.
+
+--Downloading necessary files--
+Save this file in your home directory with the name git-completion.bash.
+Save this file in your home directory with the name git-prompt.sh.
+Download bash_profile_course from the Downloadables section.
+If you already have a file in your home directory named .bash_profile, copy the content from bash_profile_course and paste it at the bottom of .bash_profile. Otherwise, move bash_profile_course to your home directory and rename it to .bash_profile. (If you're curious to learn more about how bash prompts work, see this page.)
+
+--Making Git configurations--
+Run the following Git configuration commands. The first one will need to be modified if you are using a text editor other than Sublime, or if Sublime is installed in another location for you. See this page for the correct command for a couple of other popular text editors. For any other editor, you'll need to enter the command you use to launch that editor from Git Bash.
+
+git config --global core.editor "'C:/Program Files/Sublime Text 2/sublime_text.exe' -n -w"
+git config --global push.default upstream
+git config --global merge.conflictstyle diff3
+
+--Make sure you can start your editor from Git Bash--
+If you use Sublime, you can do this by adding the following line to your .bash_profile:
+
+alias subl="C:/Program\ Files/Sublime\ Text\ 2/sublime_text.exe"
+
+--Restart Git Bash--
+You'll need to close and re-open Git Bash before all your changes take effect.
+
+7. Now that you have your workspace set up, what do you want to try using Git for?
+
+I will use git for the rest of my programming life.

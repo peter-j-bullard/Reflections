@@ -1,0 +1,10 @@
+--Git repositories and directories--
+
+Each Git repository is tied to a specific directory - the directory where you ran git init. Only files from that directory (and subdirectories inside that directory) will be contained in that repository, and you can have different repositories in different directories.
+
+Note: it's often the case that a Git repository in some directory will only contain, or track, some of the files in that directory, rather than all of them. You'll see how this works later this lesson.
+
+If you accidentally add a file to the staging area, you can remove it using git reset. For example, if you accidentally add lesson_2_reflections.txt, but don’t want it to be committed yet, run git reset lesson_2_reflections.txt and the file will be removed from the staging area, but it will still be in your working directory.
+
+git add will add any file you want to the repository
+
