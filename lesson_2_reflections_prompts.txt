@@ -8,3 +8,6 @@ If you accidentally add a file to the staging area, you can remove it using git 
 
 git add will add any file you want to the repository
 
+1. How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+It allows for information to be separated from the project.
