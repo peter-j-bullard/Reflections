@@ -11,3 +11,6 @@ git add will add any file you want to the repository
 1. How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 It allows for information to be separated from the project.
+
+https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf
+use this url to find all commands relative to git
